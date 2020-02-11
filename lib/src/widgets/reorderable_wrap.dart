@@ -976,7 +976,7 @@ class _ReorderableWrapContentState extends State<_ReorderableWrapContent>
             SizedBox(),
         onWillAccept: (int toAccept) => _onWillAccept(toAccept, true),
         onAccept: (int accepted) {},
-        onLeave: (int leaving) {},
+        onLeave: (Object leaving) {},
       );
       Widget nextDragTarget = DragTarget<int>(
         builder: (BuildContext context, List<int> acceptedCandidates,
@@ -984,7 +984,7 @@ class _ReorderableWrapContentState extends State<_ReorderableWrapContent>
             SizedBox(),
         onWillAccept: (int toAccept) => _onWillAccept(toAccept, false),
         onAccept: (int accepted) {},
-        onLeave: (int leaving) {},
+        onLeave: (Object leaving) {},
       );
 
       Widget dragTarget = Stack(
